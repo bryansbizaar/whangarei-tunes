@@ -32,7 +32,6 @@ body {
 }
 
 .nav-item {
-  display: flex;
   display: inline-block;
   align-items: center;
   padding: 1rem;
