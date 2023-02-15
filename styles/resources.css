@@ -67,7 +67,8 @@ body {
   font-size: 1.75rem;
 }
 
-.resources {
+.resources,
+.text {
   font-size: 1.2rem;
 }
 
@@ -76,6 +77,5 @@ body {
 }
 
 .text {
-  font-size: 1.2rem;
   padding: 0 0 1rem 0;
 }
