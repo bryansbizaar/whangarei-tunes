@@ -16,6 +16,7 @@ body {
 
 .title {
   font-size: 2rem;
+  font-family: "Economica", sans-serif;
   display: inline-block;
   width: 100%;
   margin: 0 auto;
@@ -36,6 +37,7 @@ body {
 .nav a {
   color: black;
   font-size: 1.5rem;
+  font-family: "Economica", sans-serif;
 }
 
 .article-content {
@@ -80,6 +82,7 @@ body {
 
 .name {
   font-size: 1.75rem;
+  font-family: "Economica", sans-serif;
 }
 
 .description {
