@@ -4,6 +4,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  color: black;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
   display: inline-block;
   width: 100%;
   margin: 0 auto;
-  color: black;
   text-align: center;
   padding: 1rem 0;
   background: rgb(255, 233, 220);
@@ -30,16 +30,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .nav a {
-  color: black;
   font-size: 1.5rem;
   font-family: "Economica", sans-serif;
 }
 
-.nav-item {
+.nav-item,
+.name,
+.img {
   padding: 1rem;
 }
 
@@ -47,13 +47,13 @@ body {
 .resource-content a:hover,
 .title:hover {
   color: rgb(104, 102, 102);
+  cursor: pointer;
 }
 
 .img {
   height: 50vh;
   width: 100%;
   object-fit: cover;
-  padding: 1rem;
 }
 
 .container {
@@ -65,7 +65,6 @@ body {
 .name {
   display: block;
   text-align: center;
-  padding: 1rem;
   font-size: 1.75rem;
   font-family: "Economica", sans-serif;
 }
@@ -75,10 +74,12 @@ body {
   font-size: 1.2rem;
 }
 
-.resource-content a {
-  color: black;
-}
-
 .text {
   padding: 0 0 1rem 0;
+}
+
+@media screen and (min-width: 48rem) {
+  .container {
+    max-width: 60rem;
+  }
 }

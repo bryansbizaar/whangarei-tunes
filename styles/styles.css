@@ -20,21 +20,23 @@ body {
   display: inline-block;
   width: 100%;
   margin: 0 auto;
-  color: black;
   text-align: center;
   padding: 1rem 0;
   background: rgb(255, 233, 220);
+}
+
+.title,
+.nav a {
+  color: black;
 }
 
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .nav a {
-  color: black;
   font-size: 1.5rem;
   font-family: "Economica", sans-serif;
 }
@@ -42,8 +44,12 @@ body {
 .nav-item {
   display: inline-block;
   align-items: center;
-  padding: 1rem;
   cursor: pointer;
+}
+
+.nav-item,
+.img {
+  padding: 1rem;
 }
 
 .nav a:hover {
@@ -54,7 +60,6 @@ body {
   height: 50vh;
   width: 100%;
   object-fit: cover;
-  padding: 1rem;
 }
 
 .container {
