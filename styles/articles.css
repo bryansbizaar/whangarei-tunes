@@ -26,8 +26,7 @@ body {
   background: rgb(255, 233, 220);
 }
 
-.nav,
-.articles {
+.nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +37,10 @@ body {
   color: black;
   font-size: 1.5rem;
   font-family: "Economica", sans-serif;
+}
+
+.articles {
+  justify-items: center;
 }
 
 .article-content {
@@ -75,9 +78,11 @@ body {
 .name,
 .description,
 .text {
-  display: block;
-  text-align: center;
   padding: 1rem;
+}
+
+.centered-content {
+  text-align: center;
 }
 
 .name {
@@ -91,4 +96,16 @@ body {
 
 .text {
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 60rem;
+  }
 }
