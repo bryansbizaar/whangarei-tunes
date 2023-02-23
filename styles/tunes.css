@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* text-decoration: none;
+  list-style: none; */
+  color: black;
+}
+
+body {
+  background: rgb(231, 227, 215);
+}
+
+.title,
+.nav-item,
+.nav-item a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Economica", sans-serif;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+  background: rgb(255, 233, 220);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(247, 226, 181);
+}
+
+.nav a {
+  font-size: 1.5rem;
+  font-family: "Economica", sans-serif;
+}
+
+.nav-item,
+.img,
+.text {
+  padding: 1rem;
+}
+
+.img {
+  margin-top: calc(17vh);
+}
+
+.nav a:hover,
+.title:hover,
+.subject a:hover {
+  color: rgb(104, 102, 102);
+  cursor: pointer;
+}
+
+.img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+  max-width: 50rem;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-family: "Economica", sans-serif;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.group {
+  font-size: 1.4rem;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.subject a,
+.text,
+.tune-name {
+  font-size: 1.2rem;
+}
+
+.tune-name {
+  list-style: none;
+  text-align: center;
+  padding: 0.3rem;
+}
