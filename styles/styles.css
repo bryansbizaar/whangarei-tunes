@@ -2,8 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
+  color: black;
 }
 
 body {
@@ -11,7 +10,10 @@ body {
 }
 
 .header {
-  background: rgb(247, 226, 181);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .title {
@@ -26,25 +28,23 @@ body {
 }
 
 .title,
-.nav a {
-  color: black;
+.nav-item,
+.nav-item a,
+.dropdown-item {
+  text-decoration: none;
+  list-style: none;
 }
 
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(247, 226, 181);
 }
 
 .nav a {
   font-size: 1.5rem;
   font-family: "Economica", sans-serif;
-}
-
-.nav-item {
-  display: inline-block;
-  align-items: center;
-  cursor: pointer;
 }
 
 .nav-item,
@@ -60,6 +60,7 @@ body {
   height: 50vh;
   width: 100%;
   object-fit: cover;
+  margin-top: calc(17vh);
 }
 
 .container {
@@ -71,4 +72,38 @@ body {
 .text {
   font-size: 1.2rem;
   padding: 0 0 1rem 0;
+}
+
+.dropdown {
+  background: rgb(247, 226, 181);
+  position: absolute;
+  z-index: 999;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.dropdown-menu {
+  position: relative;
+  left: -1.25rem;
+}
+
+.dropdown-item {
+  margin: 1.25rem;
+}
+
+.dropdown-item a {
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+li:hover .dropdown {
+  display: block;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transform: scale(1, 1);
+  opacity: 1;
+  transition: opacity 150ms ease-in-out 150ms;
 }

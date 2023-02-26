@@ -2,20 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* text-decoration: none;
-  list-style: none; */
   color: black;
 }
 
 body {
   background: rgb(231, 227, 215);
-}
-
-.title,
-.nav-item,
-.nav-item a {
-  text-decoration: none;
-  list-style: none;
 }
 
 .header {
@@ -36,6 +27,14 @@ body {
   background: rgb(255, 233, 220);
 }
 
+.title,
+.nav-item,
+.nav-item a,
+.dropdown-item {
+  text-decoration: none;
+  list-style: none;
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -54,13 +53,11 @@ body {
   padding: 1rem;
 }
 
-.img {
-  margin-top: calc(17vh);
-}
-
 .nav a:hover,
 .title:hover,
-.subject a:hover {
+.subject a:hover,
+.text a:hover,
+.tune-name a:hover {
   color: rgb(104, 102, 102);
   cursor: pointer;
 }
@@ -69,6 +66,7 @@ body {
   height: 50vh;
   width: 100%;
   object-fit: cover;
+  margin-top: calc(17vh);
 }
 
 .container {
@@ -80,6 +78,40 @@ body {
 .name {
   font-size: 1.75rem;
   font-family: "Economica", sans-serif;
+}
+
+.dropdown {
+  background: rgb(247, 226, 181);
+  position: absolute;
+  z-index: 999;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.dropdown-menu {
+  position: relative;
+  left: -1.25rem;
+}
+
+.dropdown-item {
+  margin: 1.25rem;
+}
+
+.dropdown-item a {
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+li:hover .dropdown {
+  display: block;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transform: scale(1, 1);
+  opacity: 1;
+  transition: opacity 150ms ease-in-out 150ms;
 }
 
 .description {
