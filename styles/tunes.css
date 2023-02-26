@@ -48,12 +48,18 @@ body {
 }
 
 .nav-item,
-.img {
+.img,
+.text {
   padding: 1rem;
 }
 
-.nav a:hover {
+.nav a:hover,
+.title:hover,
+.subject a:hover,
+.text a:hover,
+.tune-name a:hover {
   color: rgb(104, 102, 102);
+  cursor: pointer;
 }
 
 .img {
@@ -69,9 +75,9 @@ body {
   max-width: 50rem;
 }
 
-.text {
-  font-size: 1.2rem;
-  padding: 0 0 1rem 0;
+.name {
+  font-size: 1.75rem;
+  font-family: "Economica", sans-serif;
 }
 
 .dropdown {
@@ -106,4 +112,28 @@ li:hover .dropdown {
   transform: scale(1, 1);
   opacity: 1;
   transition: opacity 150ms ease-in-out 150ms;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.group {
+  font-size: 1.4rem;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.subject a,
+.text,
+.tune-name {
+  font-size: 1.2rem;
+}
+
+.tune-name {
+  list-style: none;
+  text-align: center;
+  padding: 0.3rem;
 }
