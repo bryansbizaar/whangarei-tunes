@@ -42,7 +42,8 @@ body {
   background: rgb(247, 226, 181);
 }
 
-.nav a {
+.nav a,
+h3 {
   font-size: 1.5rem;
   font-family: "Economica", sans-serif;
 }
@@ -51,6 +52,14 @@ body {
 .img,
 .text {
   padding: 1rem;
+}
+
+h3 {
+  padding: 0.5rem;
+}
+
+.tunes-week {
+  padding: 0 2rem 2rem;
 }
 
 .nav a:hover,
@@ -112,10 +121,6 @@ li:hover .dropdown {
   transform: scale(1, 1);
   opacity: 1;
   transition: opacity 150ms ease-in-out 150ms;
-}
-
-.description {
-  font-size: 1.5rem;
 }
 
 .group {
