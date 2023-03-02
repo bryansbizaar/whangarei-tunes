@@ -27,7 +27,20 @@ body {
   background: rgb(255, 233, 220);
 }
 
-.title,
+.title-text {
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.nav-name,
+.name {
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.25);
+}
+
+.group {
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.15);
+}
+
+.title a,
 .nav-item,
 .nav-item a,
 .dropdown-item {
@@ -44,7 +57,7 @@ body {
 
 .nav a,
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-family: "Economica", sans-serif;
 }
 
@@ -75,7 +88,8 @@ h3 {
   height: 50vh;
   width: 100%;
   object-fit: cover;
-  margin-top: calc(17vh);
+  margin-top: calc(23vh);
+  border-radius: 1.5rem;
 }
 
 .container {
@@ -125,6 +139,9 @@ li:hover .dropdown {
 
 .group {
   font-size: 1.4rem;
+  font-weight: 525;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
 }
 
 .centered-content {
