@@ -32,7 +32,7 @@ body {
 }
 
 .nav-name {
-  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.25);
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.15);
 }
 
 .title,
@@ -60,8 +60,10 @@ body {
   padding: 1rem;
 }
 
-.nav a:hover {
+.nav a:hover,
+.group:hover {
   color: rgb(104, 102, 102);
+  cursor: pointer;
 }
 
 .img {
@@ -72,15 +74,21 @@ body {
   border-radius: 1.5rem;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 2rem 2rem;
+.container-content {
+  margin: 1rem 2rem;
   max-width: 50rem;
+  background: rgb(253, 251, 245);
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  padding-bottom: 3rem;
 }
 
 .text {
   font-size: 1.2rem;
-  padding: 0 0 1rem 0;
+  padding: 1rem;
 }
 
 .dropdown {
@@ -115,4 +123,16 @@ li:hover .dropdown {
   transform: scale(1, 1);
   opacity: 1;
   transition: opacity 150ms ease-in-out 150ms;
+}
+
+.group {
+  font-weight: 550;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 53.75rem) {
+  .container-content {
+    margin: 0 auto;
+  }
 }

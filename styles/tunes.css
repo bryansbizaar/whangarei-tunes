@@ -31,13 +31,13 @@ body {
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
 }
 
-.nav-name,
-.name {
-  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.25);
+.nav-name {
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.15);
 }
 
+.name,
 .group {
-  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.15);
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.1);
 }
 
 .title a,
@@ -72,11 +72,16 @@ h3 {
 }
 
 .tunes-week {
-  padding: 0 2rem 2rem;
+  /* padding: 0 2rem 2rem; */
+  margin: 2rem 1rem 2rem;
+}
+
+.tunes-list {
+  margin-top: 2rem;
 }
 
 .nav a:hover,
-.title:hover,
+.title a:hover,
 .subject a:hover,
 .text a:hover,
 .tune-name a:hover {
@@ -92,15 +97,36 @@ h3 {
   border-radius: 1.5rem;
 }
 
-.container {
+/* .container {
   margin: 0 auto;
   padding: 0 2rem 2rem;
   max-width: 50rem;
+} */
+
+.container-content {
+  margin: 1rem 2rem 2rem;
+  /* padding-bottom: 1rem; */
+  max-width: 50rem;
+  background: rgb(253, 251, 245);
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
+
+.container {
+  padding-bottom: 3rem;
+}
+
+/* .tunes-container {
+  max-width: 20rem;
+  background: rgb(253, 251, 245);
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+} */
 
 .name {
   font-size: 1.75rem;
   font-family: "Economica", sans-serif;
+  /* padding-bottom: 1rem; */
 }
 
 .dropdown {
@@ -158,4 +184,10 @@ li:hover .dropdown {
   list-style: none;
   text-align: center;
   padding: 0.3rem;
+}
+
+@media screen and (min-width: 53.75rem) {
+  .container-content {
+    margin: 1rem auto;
+  }
 }

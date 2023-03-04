@@ -73,7 +73,7 @@ body {
 
 .nav a:hover,
 .article-content a:hover,
-.title:hover {
+.title a:hover {
   color: rgb(104, 102, 102);
   cursor: pointer;
 }
