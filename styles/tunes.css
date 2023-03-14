@@ -17,7 +17,7 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Economica", sans-serif;
   display: inline-block;
   width: 100%;
@@ -57,7 +57,7 @@ body {
 
 .nav a,
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-family: "Economica", sans-serif;
 }
 
@@ -72,7 +72,6 @@ h3 {
 }
 
 .tunes-week {
-  /* padding: 0 2rem 2rem; */
   margin: 2rem 1rem 2rem;
 }
 
@@ -90,22 +89,14 @@ h3 {
 }
 
 .img {
-  height: 50vh;
   width: 100%;
   object-fit: cover;
-  margin-top: calc(23vh);
+  margin-top: calc(20vh);
   border-radius: 1.5rem;
 }
 
-/* .container {
-  margin: 0 auto;
-  padding: 0 2rem 2rem;
-  max-width: 50rem;
-} */
-
 .container-content {
   margin: 1rem 2rem 2rem;
-  /* padding-bottom: 1rem; */
   max-width: 50rem;
   background: rgb(253, 251, 245);
   border-radius: 0.5rem;
@@ -116,17 +107,9 @@ h3 {
   padding-bottom: 3rem;
 }
 
-/* .tunes-container {
-  max-width: 20rem;
-  background: rgb(253, 251, 245);
-  border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
-} */
-
 .name {
   font-size: 1.75rem;
   font-family: "Economica", sans-serif;
-  /* padding-bottom: 1rem; */
 }
 
 .dropdown {
@@ -186,8 +169,35 @@ li:hover .dropdown {
   padding: 0.3rem;
 }
 
+@media screen and (min-width: 48rem) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .nav a {
+    font-size: 1.75rem;
+  }
+
+  .dropdown-item a {
+    font-size: 1rem;
+  }
+
+  .img {
+    margin-top: calc(22vh);
+  }
+
+  .container {
+    margin: 0 1rem;
+  }
+}
+
 @media screen and (min-width: 53.75rem) {
   .container-content {
     margin: 1rem auto;
+  }
+
+  .img {
+    height: 65vh;
+    margin-top: calc(23vh);
   }
 }
