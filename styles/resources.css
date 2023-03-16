@@ -17,7 +17,7 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Economica", sans-serif;
   display: inline-block;
   width: 100%;
@@ -27,7 +27,20 @@ body {
   background: rgb(255, 233, 220);
 }
 
-.title,
+.title-text {
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.nav-name {
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.15);
+}
+
+.name,
+.group {
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.1);
+}
+
+.title a,
 .nav-item,
 .nav-item a,
 .resource-content,
@@ -44,34 +57,41 @@ body {
 }
 
 .nav a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Economica", sans-serif;
 }
 
 .nav-item,
-.name,
-.img {
+.img,
+.text,
+.resources {
   padding: 1rem;
 }
 
 .nav a:hover,
 .resource-content a:hover,
-.title:hover {
+.title a:hover {
   color: rgb(104, 102, 102);
   cursor: pointer;
 }
 
 .img {
-  height: 50vh;
   width: 100%;
   object-fit: cover;
-  margin-top: calc(17vh);
+  margin-top: calc(20vh);
+  border-radius: 1.5rem;
+}
+
+.container-content {
+  margin: 1rem 2rem 2rem;
+  max-width: 50rem;
+  background: rgb(253, 251, 245);
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 2rem 2rem;
-  max-width: 50rem;
+  padding-bottom: 3rem;
 }
 
 .name {
@@ -117,17 +137,52 @@ li:hover .dropdown {
   text-align: center;
 }
 
+.group {
+  font-size: 1.4rem;
+  font-weight: 525;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .resources,
 .text {
   font-size: 1.2rem;
 }
 
-.text {
-  padding: 0 0 1rem 0;
+.resource-content {
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 48rem) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .nav a {
+    font-size: 1.75rem;
+  }
+
+  .dropdown-item a {
+    font-size: 1rem;
+  }
+
+  .img {
+    margin-top: calc(22vh);
+  }
+
   .container {
-    max-width: 60rem;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 53.75rem) {
+  .container-content {
+    margin: 1rem auto;
+  }
+
+  .img {
+    height: 65vh;
+    margin-top: calc(23vh);
   }
 }

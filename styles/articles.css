@@ -17,7 +17,7 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Economica", sans-serif;
   display: inline-block;
   width: 100%;
@@ -27,7 +27,19 @@ body {
   background: rgb(255, 233, 220);
 }
 
-.title,
+.title-text {
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.nav-name {
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.15);
+}
+
+.name {
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.1);
+}
+
+.title a,
 .nav-item,
 .nav-item a,
 .dropdown-item {
@@ -43,7 +55,7 @@ body {
 }
 
 .nav a {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-family: "Economica", sans-serif;
 }
 
@@ -64,25 +76,24 @@ body {
 
 .nav a:hover,
 .article-content a:hover,
-.title:hover {
+.title a:hover {
   color: rgb(104, 102, 102);
   cursor: pointer;
 }
 
 .img {
-  height: 50vh;
   width: 100%;
   object-fit: cover;
-  margin-top: calc(17vh);
+  margin-top: calc(20vh);
+  border-radius: 1.5rem;
 }
 
-.container {
+/* .container {
   margin: 0 auto;
   padding: 0 2rem 2rem;
   max-width: 50rem;
-}
+} */
 
-.name,
 .description,
 .text {
   padding: 1rem;
@@ -142,7 +153,34 @@ li:hover .dropdown {
     align-items: center;
   }
 
+  .title {
+    font-size: 2rem;
+  }
+
+  .nav a {
+    font-size: 1.75rem;
+  }
+
+  .dropdown-item a {
+    font-size: 1rem;
+  }
+
+  .img {
+    margin-top: calc(22vh);
+  }
+
   .container {
-    max-width: 60rem;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 53.75rem) {
+  .container-content {
+    margin: 1rem auto;
+  }
+
+  .img {
+    height: 65vh;
+    margin-top: calc(23vh);
   }
 }
