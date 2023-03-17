@@ -166,7 +166,7 @@ li:hover .dropdown {
 .tune-name {
   list-style: none;
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.3rem 0.5rem;
 }
 
 @media screen and (min-width: 48rem) {

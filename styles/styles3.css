@@ -35,11 +35,7 @@ body {
   text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.15);
 }
 
-.name {
-  text-shadow: 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.1);
-}
-
-.title a,
+.title,
 .nav-item,
 .nav-item a,
 .dropdown-item {
@@ -59,53 +55,40 @@ body {
   font-family: "Economica", sans-serif;
 }
 
-.articles {
-  justify-items: center;
-}
-
-.article-content a,
-.text {
-  font-size: 1.2rem;
-}
-
 .nav-item,
-.img,
-.article-content {
+.img {
   padding: 1rem;
 }
 
 .nav a:hover,
-.article-content a:hover,
-.title a:hover {
+.group:hover {
   color: rgb(104, 102, 102);
   cursor: pointer;
 }
 
 .img {
+  /* height: 30vh; */
   width: 100%;
   object-fit: cover;
   margin-top: calc(20vh);
   border-radius: 1.5rem;
 }
 
-/* .container {
-  margin: 0 auto;
-  padding: 0 2rem 2rem;
+.container-content {
+  margin: 0 2rem;
   max-width: 50rem;
-} */
+  background: rgb(253, 251, 245);
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
 
-.description,
+.container {
+  padding-bottom: 3rem;
+}
+
 .text {
+  font-size: 1.2rem;
   padding: 1rem;
-}
-
-.centered-content {
-  text-align: center;
-}
-
-.name {
-  font-size: 1.75rem;
-  font-family: "Economica", sans-serif;
 }
 
 .dropdown {
@@ -142,17 +125,13 @@ li:hover .dropdown {
   transition: opacity 150ms ease-in-out 150ms;
 }
 
-.description {
-  font-size: 1.5rem;
+.group {
+  font-weight: 550;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 48rem) {
-  .articles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .title {
     font-size: 2rem;
   }
@@ -176,7 +155,7 @@ li:hover .dropdown {
 
 @media screen and (min-width: 53.75rem) {
   .container-content {
-    margin: 1rem auto;
+    margin: 0 auto;
   }
 
   .img {
