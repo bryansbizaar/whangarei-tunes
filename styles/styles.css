@@ -106,7 +106,7 @@ h3 {
 .img {
   width: 100%;
   object-fit: cover;
-  margin-top: calc(20vh);
+  margin-top: 9rem;
   border-radius: 1.5rem;
 }
 
@@ -174,14 +174,11 @@ li:hover .dropdown {
   transition: opacity 150ms ease-in-out 150ms;
 }
 
-.group-home {
-  font-weight: 550;
-}
-
-.group {
+.group,
+.tune-group {
   display: inline-block;
-  font-size: 1.4rem;
-  font-weight: 525;
+  font-size: 1.25rem;
+  font-weight: 550;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: none;
 }
